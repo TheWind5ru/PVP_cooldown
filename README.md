@@ -1,4 +1,5 @@
-#PVP_cooldown
+# PVP_cooldown
+
 MC Plugin for setting delays in PVP
 1. open CMD/powershell window
 2. type: cd path/to/dir
