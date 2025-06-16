@@ -1,0 +1,8 @@
+name: PvP_CD
+version: '${project.version}'
+main: ru.lnyrec.pvp_cd.PvPCooldownPlugin
+api-version: '1.16'
+load: STARTUP
+authors: [LennyGD]
+description: Плагин для настройки кулдауна при пвп
+website: lnyrec.ru

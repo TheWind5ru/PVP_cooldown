@@ -1,0 +1,30 @@
+# Основные настройки
+cooldown-duration-seconds: 10 # Default cooldown duration in seconds
+
+# Настройки босс-бара
+bossbar:
+  enabled: true
+  title-format: "&cPvP Cooldown: &f%seconds%s осталось" # Use %seconds% placeholder
+  color: RED # See org.bukkit.boss.BarColor for options
+  style: SOLID # See org.bukkit.boss.BarStyle for options
+
+# Настройки заблокированых команд
+command-blocking:
+  enabled: true
+  blocked-message: "&cКоманды запрещены в ПВП!"
+  whitelist: # разрешены при PVP
+    - "examplecommand"
+
+# Наказание за выход
+logout-prevention:
+  enabled: true
+  punishment: KILL # Настройки: NONE, KILL, DAMAGE (and specify damage amount)
+  damage-amount: 10.0 # Only applies if punishment is DAMAGE
+  message: "&cНельзя выходить из Игры во время ПВП! Вы умерли, и потеряли все вещи."
+  broadcast-message: # Новая секция для сообщения в общий чат
+    enabled: true # Установите в false, чтобы отключить
+    message: "&e%nickname% покинул игру во время боя!" # Используйте %nickname% для ника игрока
+
+# Messages
+cooldown-start-message: "&cСейчас вы в ПВП!"
+cooldown-end-message: "&aОграничения при ПВП больше не действуют."
